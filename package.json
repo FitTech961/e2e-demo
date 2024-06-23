@@ -1,0 +1,30 @@
+{
+  "name": "e2e-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "playwright test --config playwright.config.ts",
+    "test:ui": "playwright test --ui --config playwright.config.ts",
+    "inspector": "playwright codegen",
+    "install-deps": "playwright install --with-deps chromium",
+    "merge-blob-reports": "playwright merge-reports --config=./merge.config.ts ./all-blob-reports"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.44.1",
+    "@types/node": "^20.14.8",
+    "eslint": "^8.57.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.1.3",
+    "eslint-plugin-react": "^7.34.3",
+    "globals": "^15.6.0",
+    "prettier": "^3.3.2",
+    "typescript": "^5.5.2",
+    "typescript-eslint": "^7.13.1"
+  },
+  "dependencies": {
+    "path": "^0.12.7"
+  }
+}
