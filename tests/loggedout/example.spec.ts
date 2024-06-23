@@ -9,5 +9,6 @@ test.describe('loggedout state', () => {
     expect(page.url()).toBe('https://www.saucedemo.com/');
 
     await expect(page.locator('[data-test="error"]')).toBeVisible();
+
   })
 })
