@@ -2,10 +2,6 @@ import { test, expect } from '@playwright/test';
 
 test.describe('loggedin state', () => {
 
-  // test.afterAll(async () => {
-  //   await page.close();
-  // });
-
   test('add item to cart', async ({page}) => {
     // Go to homepage
     await page.goto('https://www.saucedemo.com/inventory.html')
